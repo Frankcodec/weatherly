@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" type="text/css" href="stlyle.css">
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="" href="./fontawesome-free-6.2.0-web/css/all.css">
+	<script src="./fontawesome-free-6.2.0-web/js/all.js"></script>
+	<script src="./fontawesome-free-6.2.0-web/css/all.css"></script>
+</head>
+<body>
+	<section id="section">
+		<nav id="nav">
+			<h1 id="logo">F</h1>
+			<p id="frank">Frank</p><hr>
+
+			<img src="me.jpg" id="me">
+		</nav>
+		<section>
+		<section id="datacontainer">
+			<section id="weather">
+				<div id="suncontainer" style="margin: 20px;">
+					<div style="float: right;"><div id="cityn">
+						<input type="text" name="" style="" id="cityname" >
+						<button id="checknow" onclick="clap()" style=";">Check Now</button></div>
+						<button id="fontawesome" onclick="show(id)"><i class="fas fa-search"></i></button>
+					</div>
+				    <img src="images.jfif" id="sun">
+			    <h1 id="celcius" style="font-size: 70px;font-family: calibri;color: #fff;font-weight: 100;margin-top: 20px;margin-bottom: 15px;"><span id="celciusnum">35</span><sup>o<sub>C</sub></sup></h1>
+			    <h3 style="font-family: calibri;color: #fff;padding-bottom: 20px;" id="weatherdescrip">Weather Descrip</h3><hr>
+			    <h3 style="font-family: calibri;color: #fff;padding-top: 20px;" id="locationname">Florida, US</h3>
+			    <h3 style="font-family: calibri;color: #fff;padding-top: 10px;" id="date">Date</h3>
+				</div>
+			</section>
+		<section id="data" style="color: #fff;">
+			<div id="one">
+				<div id="winda" style="font-family: calibri">
+					<div id="box" style="padding: 10px;display: grid;grid-template-rows: 1fr 2.5fr 1fr">
+						<p>wind status</p>
+						<div id="svg">
+							<img src="wavy.png" style="height: 50px;margin-left: 0px;width: 100%;">
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+						<h1 style="font-family: calibri;font-size: 50px;font-weight: 200;"><span id="windstatus">0.00</span><span>km/h</span></h1>
+						<p style="font-family: calibri;padding-bottom: 8px;"><span id="time">0:00</span></p>
+					</div>
+					</div>
+				</div>
+				<div id="windb" style="color: #fff;">
+					<div style="padding: 10px;">
+					<p style="font-family: calibri">Humidity</p>
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<h1 style="font-family: calibri;font-size: 50px;font-weight: 200;"><span id="humidity">79</span><span>%</span></h1>
+						<p style="font-family: calibri;align-self: flex-end;width: 40%;">The dew point is <span id="dewpoint">27<sup>o<sub>C</sub></sup></span> right now</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div id="two" style="color: #fff;">
+				<div id="uva">
+					<div id="box" style="padding: 10px;display: grid;grid-auto-rows: 1fr 2.5fr 1fr;">
+						<p>uv index</p>
+						<div id="svgb">
+							<div id="lines"></div>
+						</div>
+						
+						<h1 style="font-family: calibri;font-size: 50px;font-weight: 200;text-align: center;"><span id="uvindex">5.50</span><span>uv</span></h1>
+					
+					</div>
+				</div>
+				<div id="uvb">
+					<div style="padding: 10px;">
+					<p style="font-family: calibri">Visibility</p>
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<h1 style="font-family: calibri;font-size: 50px;font-weight: 200;"><span id="visibility">03</span><span>km</span></h1>
+						<p style="font-family: calibri;align-self: flex-end;width: 40%;">Haze is <span>affecting</span> Visibility</p>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div id="three" style="color: #fff;">
+				<div id="tempa" style="font-family: calibri;">
+					<div id="box" style="padding: 10px;display: grid;grid-auto-rows: 1fr 5fr 1fr;">
+						<p>Sunrise & Sunset</p>
+						<div id="svgc">
+							<div id="linesb"></div>
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<div>
+								<p style="color: yellow">Sunrise</p>
+						<p style="font-family: calibri;font-weight: 200;"><span id="sunrise">5:30</span></p></div>
+						<div>
+							<p style="font-family: calibri;text-align: right;color: yellow;font-weight: 200;"><span>sunset</span></p>
+							<p style="font-family: calibri;text-align: right;"><span id="sunset">0:00</span></p>
+						</div>
+					</div>
+					</div>
+				</div>
+				<div id="tempb">
+					<div style="padding: 10px;">
+					<p style="font-family: calibri">Feels Like</p>
+					<div style="display: flex;flex-direction: row;justify-content: space-between;">
+						<h1 style="font-family: calibri;font-size: 50px;font-weight: 200;" id="feel">42<span></span></h1>
+						<p style="font-family: calibri;align-self: flex-end;width: 40%;">Humidity is making it feel <span>hotter</span></p>
+					</div>
+				</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section id="secondresult" style="color: #fff;font-family: calibri;">
+		<section id="datab">
+			<div id="forecast">
+				<div style="padding: 8px;">
+					<p>6 days forecast</p>
+					<div id="spinning">
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<h2 id="nextdays"><span id="forecastcelcius1">32<sup>o</sup></span></h2>
+							<p id="daymonth1">25 July</p>
+							
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<h2 id="nextdays"><span id="forecastcelcius2">32<sup>o</sup></span></h2>
+							<p id="daymonth2">25 July</p>
+							
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<h2 id="nextdays"><span id="forecastcelcius3">32<sup>o</sup></span></h2>
+							<p id="daymonth3">25 July</p>
+							
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<h2 id="nextdays"><span id="forecastcelcius4">32<sup>o</sup></span></h2>
+							<p id="daymonth4">25 July</p>
+							
+						</div>
+						<div style="display: flex;flex-direction: row;justify-content: space-between;align-items: flex-end;">
+							<h2 id="nextdays"><span id="forecastcelcius5">32<sup>o</sup></span></h2>
+							<p id="daymonth5">25 July</p>
+							
+						</div>
+						<div id="tomorrowweather">
+							<p id="weekday">Tomorrow</p>
+							<span id="nextweather">23<sup>o</sup></span>
+							<span id="nextdescrip">Thunder storm day</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="map" style="color: #fff;font-family: calibri;overflow: hidden;position: relative;">
+				<div style="padding: 0px;">
+					<div style="width: 100%;height: 500px;top: 0;" id="iframe"></div>
+			</div>
+				<div style="width: fit-content;height: 50px;border-radius: 15px;padding: 8px;background: #383f47;position: absolute;top: 0;">
+					<h3>Precipitation</h3>
+					<div id="multicolor" style="background: linear-gradient(90deg, #f04005, cyan, blue, orange);width: 100%;height: 5px;margin: 5px 0;border-radius: 15px;"></div>
+					<div id="options" style="height: 10px;width: 100%;display: flex;flex-direction: row;justify-content: space-between;">
+						<p style="font-size: 13px;margin-right: 5px;">Extreme</p>
+						<p style="font-size: 13px;margin-right: 5px;">Heavy</p>
+						<p style="font-size: 13px;margin-right: 5px;">Medium</p>
+						<p style="font-size: 13px;">Light</p>
+					</div>
+				</div>
+			</div>
+			
+		</section>	
+	</section>
+	</section>
+</section>
+</body>
+</html>

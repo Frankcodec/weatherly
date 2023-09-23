@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #212020;
+}
+#logo{
+	color: #fff;
+	text-shadow: 7px 2px 1px #047aed;
+	font-size: 70px;
+	font-family: sans-serif;
+	text-align: center;
+}
+#nav{
+	background: radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 960px;
+	padding: 5px;
+	margin: 15px 8px;
+}
+#me{
+	border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	margin-top: 790px;
+}
+#cityname{
+	padding: 2px;
+	border-radius: 15px;
+	font-size: 17px;
+	width: 150px;
+	outline: none;
+}
+#frank{
+	color: #fff;
+	font-family: calibri;
+	text-align: center;
+}
+#cityn{
+	display: none;
+}
+#lines{
+	border: 3px solid #fff;
+	height: 120px;
+	width: 100%;
+	background: -webkit-linear-gradient(left, #047aed 50%, transparent 51%);
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+}
+#linesb{
+	border: 3px solid #fff;
+	height: 120px;
+	width: 100%;
+	background: -webkit-linear-gradient(left, #FDB813 50%, transparent 51%);
+	border-top-left-radius: 200px;
+	border-top-right-radius: 200px;
+	margin-top: 20px;
+}
+#checknow{
+	font-family: calibri;
+}
+#spinning{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+#nextdays, #nextweather{
+	font-size: 40px;
+	font-weight: 200;
+}
+#daymonth, #daymonth1, #daymonth2, #daymonth3, #daymonth4, #daymonth5{
+	font-size: 27px;
+	font-weight: 300;
+}
+#weekday, #nextdescrip, #weekday1, #weekday2, #weekday3, #weekday4, #weekday5{
+	font-size: 27px;
+	font-weight: 300;
+}
+#nextdescrip{
+	font-size: 20px;
+}
+#fontawesome{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+}
+#tomorrowweather{
+	border-radius: 15px;
+	margin-top: 8px;
+	height: fit-content;
+	display: grid;
+	grid-template-rows: 0.3fr 1fr 0.1fr;
+	padding: 5px;
+	background: #383f47;
+}
+#section{
+	width: 100%;
+	height: fit-content;
+	background: #212020;
+	display: grid;
+	grid-template-columns: 6% 94%;
+	padding: 15px 0 0 0;
+}
+#spinning{
+	padding: 5px;
+}
+#one, #two, #three{
+	display: grid;
+	grid-template-rows: 70% 30%;
+	grid-row-gap: 20px;
+}
+#winda, #tempa, #uva{
+	background:radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 300px; 
+}
+#windb, #tempb, #uvb{
+	background:radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 100px; 
+}
+#data{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 30px;
+	justify-content: center;
+	align-items: center;
+	padding: 25px;
+	background: #383f47;
+	border-radius: 15px;
+}
+#datacontainer{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-column-gap: 40px;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+}
+#weather{
+	background:radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 470px; 
+}
+#datab{
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	grid-column-gap: 40px;
+	padding: 15px;
+}
+#forecast{
+	background:radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 470px;
+}
+#map{
+	background:radial-gradient(at 30% 30%,#424b61, #485f6a) #485f6a;
+	border-radius: 15px;
+	height: 470px;
+}
+#sun{
+	border-radius: 50%;
+	width: 100px;
+	margin-top: 40px;
+}
+
+.box {
+  --mask:
+    radial-gradient(34.99px at 50% calc(100% - 48.00px),#000 99%,#0000 101% calc(50% - 60px) 0/120px 100%,
+    radial-gradient(34.99px at 50% calc(100% + 18.00px),#0000 99%,#000 101% 50% calc(100% - 30px)/120px 100% repeat-x;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+#weather div{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	background: red;
+	position: absolute;
+}
+#suncontainer{
+	background-color: purple;
+	height: 500px;
+	width: 100%;
+}
+#data::before, #data:after{
+	content: 'Todays weather';
+	width: 70px;
+	height: -70px;
+	color: #fff;
+	background-color: red;
+}
+#celcius{
+	font-size: 60px;
+}
+#multicolor{
+	width: 100%;
+	height: 15px;
+	background: linear-gradient(33%, 45%, red, black)
+}
